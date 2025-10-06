@@ -1,0 +1,65 @@
+body {
+    background-color: #1c6ff6;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: opacity 0.5s ease;
+}
+
+.intro-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    pointer-events: none; /* Let clicks pass through */
+  }
+  
+  .intro-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+body.fade-out {
+    opacity: 0;
+  }
+
+h1 {
+    text-align: center;
+    padding-top: 15%;
+}
+
+h4 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;     
+    gap: 30px;                   
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.user {
+    width: 180px;
+    flex: 0 0 auto;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.user:hover {
+    transform: scale(1.1);
+}
+
+.user img{
+    width: 100%;
+    box-shadow: #0e326d 0.5px 0.5px 20px;
+}
+
+a {
+    text-decoration: none; /* removes underline */
+    color: inherit;        /* uses the surrounding text color */
+  }

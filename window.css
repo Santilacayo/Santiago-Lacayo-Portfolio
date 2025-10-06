@@ -1,0 +1,126 @@
+body {
+    background-color: #1c6ff6;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: opacity 0.5s ease;
+}
+
+.back :hover {
+  font-weight: bold;
+}
+
+#back-button {
+    background: none;
+    border: none;
+    color: #1c6ff6;
+    font-size: 200%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+#watch-button {
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    color: #1c6ff6;
+    border-radius: 5px;
+}
+#watch-button:hover {
+    color: #073682;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh; /* Adjust height to control how far it fades */
+    z-index: -1;
+    pointer-events: none; /* Prevent interference with clicking text */
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    overflow: hidden;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+h1 {
+    padding-top: 8vh;
+}
+
+.content {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+img {
+    width: 100%;
+}
+
+.line {
+    border-bottom: 2px solid;
+    padding-top: 4vh;
+}
+
+.pdf {
+    border: none; /*remove the default border pdf's have*/
+    outline: none;
+}
+
+#episodes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .episode {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* image left, text right */
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .episode:hover {
+    transform: scale(1.02);
+  }
+  
+  .episode img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    height: 120px;
+  }
+
+  .website iframe{
+    width: 100%;
+    height: 550px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0; /* optional spacing */
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
